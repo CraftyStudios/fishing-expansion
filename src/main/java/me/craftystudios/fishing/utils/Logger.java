@@ -1,4 +1,4 @@
-package me.yourname.pluginname.utils;
+package me.craftystudios.fishing.utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

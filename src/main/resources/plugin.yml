@@ -1,22 +1,14 @@
-name: AFK_Rewards
+name: FishingExpansion
 version: 1.0
-main: me.Incbom.afk.Main
-depennd: [WorldGuard, Vault, WorldEdit, WGRegionEvents]
+main: me.craftystudios.fishing.Main
 commands:
-  afk:
-    description: AFK main command
-    usage: '/afk'
-    aliases: [afkrewards, afk]
-    permission: afk.main
-    permission-message: You do not have permission to use this command
-  afkregion:
-    description: Manages AFK regions
-    usage: '/afkregion'
-    permission: afk.regions
-    permission-message: You do not have permission to use this command
-  afkreload:
-    description: Reloads the config
-    usage: '/afkreload'
-    permission: afk.reload
-    permission-message: You do not have permission to use this command
+  fishingexpansion:
+    description: FishingExpansion command
+    usage: /fishingexpansion
+    aliases: [fe]
+    permission: fishingexpansion.command
+    permission-message: You don't have permission to use this command!
+    default: true
+    tab-completer: me.craftystudios.fishing.Commands.fishingexpansion
+    executor: me.craftystudios.fishing.Commands.fishingexpansion
 
