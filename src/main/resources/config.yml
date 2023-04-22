@@ -5,10 +5,24 @@
 
 items:
   DIAMOND:
+    name: "test"
     chance: 0.05
     command: "give %player% diamond 1"
   IRON_INGOT:
+    name: "money"
     chance: 0.2
   GOLD_NUGGET:
+    name: "gold"
     chance: 0.1
     command: "say %player% got a gold nugget!"
+
+
+# Multipy by 100 to get the percentage
+# These are for when the player gets a message, it shows super rare or rare depending on the % chance the item had to drop
+
+superrarechance: 0.01 # 1%
+rarechance: 0.05 # 5%
+
+# The festivalmultiplyer is for when the festival is active, it will multiply the chance of getting an item by this number
+
+festivalmultiplyer: 2.0 # 2x

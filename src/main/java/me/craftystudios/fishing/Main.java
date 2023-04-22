@@ -2,6 +2,7 @@ package me.craftystudios.fishing;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import me.craftystudios.fishing.Commands.fishingexpansion;
+import me.craftystudios.fishing.Functions.Festival;
 import me.craftystudios.fishing.Functions.fish;
 import me.craftystudios.fishing.utils.Logger;
 
@@ -10,8 +11,9 @@ public final class Main extends JavaPlugin {
     @Override
     public void onEnable() {
       fish fishListener = new fish(this);
+      Festival festival = new Festival(fishListener, this);
       getServer().getPluginManager().registerEvents(fishListener, this);
-      getCommand("fishingexpansion").setExecutor(new fishingexpansion(this));
+      getCommand("fishingexpansion").setExecutor(new fishingexpansion(this, festival));
 
 
       this.saveDefaultConfig();
