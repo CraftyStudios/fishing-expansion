@@ -1,10 +1,11 @@
 name: FishingExpansion
 version: 1.0
+api-version: 1.19
 main: me.craftystudios.fishing.Main
 commands:
-  fishingexpansion:
+  fishing-expansion:
     description: FishingExpansion command
-    usage: /fishingexpansion
+    usage: /fishing-expansion
     aliases: [fe]
     permission: fishingexpansion.command
     permission-message: You don't have permission to use this command!

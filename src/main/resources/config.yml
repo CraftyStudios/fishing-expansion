@@ -26,3 +26,7 @@ rarechance: 0.05 # 5%
 # The festivalmultiplyer is for when the festival is active, it will multiply the chance of getting an item by this number
 
 festivalmultiplyer: 2.0 # 2x
+
+# The festivaltime is how long the festival will last in minutes
+festival_interval: 30 # 30 minutes between festivals
+festival_duration: 10 # 10 minutes long
